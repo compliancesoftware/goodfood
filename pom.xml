@@ -5,7 +5,7 @@
   <version>1.0.0.1</version>
   <packaging>war</packaging>
   <name>ROOT</name>
-  <description>Gerenciador de imóveis</description>
+  <description>Gerenciador de vendas</description>
   <build>
     <finalName>${project.name}</finalName>
     <plugins>

@@ -35,7 +35,7 @@
 
     cursor: pointer;
 
-    color: transparent;
+    color: gray;
     border: none;
     outline: none;
     background: transparent;
@@ -45,7 +45,7 @@
 .slick-next:hover,
 .slick-next:focus
 {
-    color: transparent;
+    color: white;
     outline: none;
     background: transparent;
 }
@@ -87,11 +87,11 @@
 }
 .slick-prev:before
 {
-    content: '<';
+    content: '';
 }
 [dir='rtl'] .slick-prev:before
 {
-    content: '<';
+    content: '';
 }
 
 .slick-next
@@ -105,11 +105,11 @@
 }
 .slick-next:before
 {
-    content: '>';
+    content: '';
 }
 [dir='rtl'] .slick-next:before
 {
-    content: '>';
+    content: '';
 }
 
 /* Dots */
@@ -187,7 +187,7 @@
     width: 20px;
     height: 20px;
 
-    content: 'o';
+    content: 'O';
     text-align: center;
 
     opacity: .25;
@@ -200,4 +200,10 @@
 {
     opacity: .75;
     color: black;
+}
+.slick-next, .slick-prev{
+	color: gray;
+    opacity: .75;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }

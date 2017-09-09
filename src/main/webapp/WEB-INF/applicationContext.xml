@@ -28,7 +28,7 @@
 	</mvc:interceptors>
 	
 	<bean class="java.net.URI" id="dbUrl">
-    	<constructor-arg value="#{systemEnvironment['IMOBILUSDB_DATABASE_URL']}"/>
+    	<constructor-arg value="#{systemEnvironment['GOODFOODDB_DATABASE_URL']}"/>
 	</bean>
 	
 	<!-- Conexão com MySql -->

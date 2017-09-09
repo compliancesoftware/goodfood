@@ -1,4 +1,4 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1" pageEncoding="ISO-8859-1"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 
 <jsp:include page="commons/header.jsp"/>
@@ -9,7 +9,7 @@
 <div class="cabecalho">
     <div class="logomarca" style="background-image:url('resources/images/logomarca.png');"></div>
     <div class="apresentacao">
-        <p>Bem vindo à Imobilus</p>
+        <p>Bem vindo Ã  Imobilus</p>
     </div>
 </div>
 
@@ -32,7 +32,7 @@
                 <div class="info-municipio">Recife</div>
                 <div class="info-tipo">APARTAMENTO</div>
                 <div class="info-bairro">Boa Vista</div>
-                <div class="info-detalhes">3 QUARTOS | 89.0M²</div>
+                <div class="info-detalhes">3 QUARTOS | 89.0MÂ²</div>
             </div>
         </div>
         <div class="lancamento" id="lancamento2">
@@ -40,10 +40,10 @@
             </div>
             <p class="image-label">Apartamento</p>
             <div class="info">
-                <div class="info-municipio">JaboatÃ£o dos Guararapes</div>
+                <div class="info-municipio">JaboatÃƒÂ£o dos Guararapes</div>
                 <div class="info-tipo">APARTAMENTO</div>
                 <div class="info-bairro">Curado 2</div>
-                <div class="info-detalhes">2 QUARTOS | 39.0M²</div>
+                <div class="info-detalhes">2 QUARTOS | 39.0MÂ²</div>
             </div>
         </div>
         <div class="lancamento" id="lancamento3">
@@ -54,7 +54,7 @@
                 <div class="info-municipio">Recife</div>
                 <div class="info-tipo">APARTAMENTO</div>
                 <div class="info-bairro">Boa Vista</div>
-                <div class="info-detalhes">3 QUARTOS | 89.0M²</div>
+                <div class="info-detalhes">3 QUARTOS | 89.0MÂ²</div>
             </div>
         </div>
         <div class="lancamento" id="lancamento4">
@@ -65,7 +65,7 @@
                 <div class="info-municipio">Recife</div>
                 <div class="info-tipo">APARTAMENTO</div>
                 <div class="info-bairro">Boa Vista</div>
-                <div class="info-detalhes">3 QUARTOS | 89.0M²</div>
+                <div class="info-detalhes">3 QUARTOS | 89.0MÂ²</div>
             </div>
         </div>
         <div class="lancamento" id="lancamento5">
@@ -76,7 +76,7 @@
                 <div class="info-municipio">Recife</div>
                 <div class="info-tipo">APARTAMENTO</div>
                 <div class="info-bairro">Boa Vista</div>
-                <div class="info-detalhes">3 QUARTOS | 89.0M²</div>
+                <div class="info-detalhes">3 QUARTOS | 89.0MÂ²</div>
             </div>
         </div>
     </div>

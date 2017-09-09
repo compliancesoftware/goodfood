@@ -24,6 +24,10 @@ function doScreenAdjustments(){
         infinite: true
     });
 
+    console.log("** Adjust next, prev and dot buttons on the screen **");
+    $(".slick-next").html("<i class='material-icons'>keyboard_arrow_right</i>");
+    $(".slick-prev").html("<i class='material-icons'>keyboard_arrow_left</i>");
+    
     console.log("*************** Build mini gallery ******************");
     $('.lancamentos').slick({
         mobileFirst: true,
@@ -70,4 +74,12 @@ $(document).ready(function(){
 //On Window Resize event, do screen adjustments anymore
 $(window).resize(function(){
     doScreenAdjustments();
+});
+
+//On Window Load setup icons to previous and next button on gallery.
+$( window ).load(function() {
+	setTimeout(function(){
+		$(".slick-next").html("<i class='material-icons'>keyboard_arrow_right</i>");
+	    $(".slick-prev").html("<i class='material-icons'>keyboard_arrow_left</i>");
+	}, 1000);
 });
