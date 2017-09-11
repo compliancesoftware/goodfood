@@ -9,6 +9,10 @@ body{
     margin: 0.4rem 0rem 0rem 0rem !important;
 }
 
+.mobile-header{
+	display: none;
+}
+
 .cabecalho{
     background-color: #bcbcbc;
     width: 100%;
@@ -28,12 +32,15 @@ body{
 
 .apresentacao {
     color: #dcdcdc;
-    font-size: 200%;
-    text-align: center;
-    width: 18.5rem;
-    float: left;
-    margin-left: 0.4rem;
-    margin-right: 0.4rem;
+	font-size: 200%;
+	text-align: center;
+	width: 18.5rem;
+	float: left;
+	margin-left: 0.4rem;
+	margin-right: 0.4rem;
+	height: 7rem;
+	margin-top: 0.4rem;
+	margin-bottom: 0.4rem;
 }
 
 .navbar{
@@ -64,7 +71,7 @@ body{
     margin-left: 0rem !important;
     position: fixed;
     background-color: black;
-    width: 100%;
+    width: 3rem;
     height: 2.3rem;
     padding-top: 0.6rem;
     padding-left: 0.6rem;
@@ -221,6 +228,25 @@ body{
         position: fixed;
         top: 0.5rem;
     }
+	
+	.mobile-header{
+		display: block;
+		color: white;
+	    text-align: center;
+	    margin-top: -0.5rem;
+	    padding: 0rem;
+	    margin-left: 0rem !important;
+	    position: fixed;
+	    background-color: black;
+	    width: 100%;
+	    height: 2.3rem;
+	    padding-top: 0.6rem;
+	    z-index: 499;
+	}
+	
+	.mobile-header p{
+		margin: auto;
+	}
 
     .cabecalho{
         padding-top: 2.3rem;

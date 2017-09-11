@@ -149,12 +149,9 @@
 
             _.originalSettings = _.options;
 
-            if (typeof document.mozHidden !== 'undefined') {
-                _.hidden = 'mozHidden';
-                _.visibilityChange = 'mozvisibilitychange';
-            } else if (typeof document.webkitHidden !== 'undefined') {
-                _.hidden = 'webkitHidden';
-                _.visibilityChange = 'webkitvisibilitychange';
+            if (typeof document.hidden !== 'undefined') {
+                _.hidden = 'hidden';
+                _.visibilityChange = 'visibilitychange';
             }
 
             _.autoPlay = $.proxy(_.autoPlay, _);

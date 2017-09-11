@@ -24,10 +24,6 @@ function doScreenAdjustments(){
         infinite: true
     });
 
-    console.log("** Adjust next, prev and dot buttons on the screen **");
-    $(".slick-next").html("<i class='material-icons'>keyboard_arrow_right</i>");
-    $(".slick-prev").html("<i class='material-icons'>keyboard_arrow_left</i>");
-    
     console.log("*************** Build mini gallery ******************");
     $('.lancamentos').slick({
         mobileFirst: true,
@@ -52,14 +48,12 @@ function bindEvents(){
 
     console.log("************* Binding navbar toggle button click... ************");
     $(".menu-toggle-next-btn").click(function(){
-        // $(".menu-toggle-next-btn").hide();
         $(".navbar").toggle("slide");
     });
 
     console.log("********** Binding navbar toggle next button click... **********");
     $(".menu-toggle-btn").click(function(){
         $(".navbar").toggle("slide");
-        // $(".menu-toggle-next-btn").show();
     });
 
     console.log("*************************** DONE! ******************************");
@@ -76,10 +70,8 @@ $(window).resize(function(){
     doScreenAdjustments();
 });
 
-//On Window Load setup icons to previous and next button on gallery.
-$( window ).load(function() {
-	setTimeout(function(){
-		$(".slick-next").html("<i class='material-icons'>keyboard_arrow_right</i>");
-	    $(".slick-prev").html("<i class='material-icons'>keyboard_arrow_left</i>");
-	}, 1000);
+$(window).load(function(){
+	console.log("** Adjust next, prev and dot buttons on the screen **");
+    $(".slick-next").html("<i class='material-icons'>keyboard_arrow_right</i>");
+    $(".slick-prev").html("<i class='material-icons'>keyboard_arrow_left</i>");
 });
