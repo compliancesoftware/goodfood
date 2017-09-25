@@ -5,19 +5,19 @@
             <i class="material-icons">navigate_before</i>
         </div>
         <div class="menu-item">
-            <p>Encontre seu imóvel</p>
+            <p>Home</p>
         </div>
         <div class="menu-item">
-            <p>Quem somos</p>
+            <p>Pontos de Atendimento</p>
         </div>
         <div class="menu-item">
-            <p>Imóveis para aluguel</p>
+            <p>Horário de funcionamento</p>
         </div>
         <div class="menu-item">
-            <p>Cadastre seu imóvel</p>
+            <p>Entre em contato</p>
         </div>
         <div class="menu-item">
-            <p>Contato</p>
+            <p>Login</p>
         </div>
     </nav>
 </div>

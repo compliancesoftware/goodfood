@@ -25,18 +25,16 @@ function doScreenAdjustments(){
     });
 
     console.log("*************** Build mini gallery ******************");
-    $('.lancamentos').slick({
+    $('.dizeres').slick({
         mobileFirst: true,
-        infinite: true,
-        slidesToShow:3,
-        slidesToScroll:3,
-        appendDots: '.lancamentos',
-        variableWidth: true,
+        speed: 500,
+        appendDots: '.dizeres',
+        arrows: true,
+        slideToShow: 3,
+        slidesToScroll: 1,
         centerMode: true,
-        swipe: true,
-        swipeToSlide: true,
-        touchMove: true,
-        dots: true
+        dots: true,
+        infinite: true
     });
 
     console.log("*********************** DONE! ***********************");
@@ -67,10 +65,13 @@ $(document).ready(function(){
 
 //On Window Resize event, do screen adjustments anymore
 $(window).resize(function(){
-    doScreenAdjustments();
+    window.location.reload();
 });
 
 $(window).load(function(){
+    console.log("**************** Adjust logo image ******************");
+    $(".logomarca").width($(".logomarca").width() - 25.6);
+
 	console.log("** Adjust next, prev and dot buttons on the screen **");
     $(".slick-next").html("<i class='material-icons'>keyboard_arrow_right</i>");
     $(".slick-prev").html("<i class='material-icons'>keyboard_arrow_left</i>");

@@ -5,50 +5,68 @@ html{
 
 body{
     height: 100% !important;
-    background-color: #000000;
+    background-color: #FFBB4E;
     margin: 0.4rem 0rem 0rem 0rem !important;
 }
 
 .mobile-header{
-	display: none;
+    display: none;
+    color: white;
+    text-align: center;
+    margin-top: -0.5rem;
+    padding: 0rem;
+    margin-left: 0rem !important;
+    position: fixed;
+    background-color: #BC2026;
+    width: 100%;
+    height: 2.3rem;
+    padding-top: 0.6rem;
+    z-index: 499;
+    box-shadow: 0rem 0.1rem 2rem black;
+}
+
+.mobile-header p{
+    margin: auto;
 }
 
 .cabecalho{
-    background-color: #bcbcbc;
+    background-color: #BC2026;
     width: 100%;
-    overflow: overlay;  
+    overflow: auto;
 }
 
 .logomarca {
-    background-color: #ffffff;
+    background-color: transparent;
     height: 7rem;
-    width: 18.2rem;
     margin-left: 0.8rem;
+    width: 21.838rem;
     margin-top: 0.4rem;
     margin-bottom: 0.4rem;
+    background-size: contain;
+    background-position: center;
     background-repeat: no-repeat;
     float: left;
 }
 
 .apresentacao {
     color: #dcdcdc;
-	font-size: 200%;
-	text-align: center;
-	width: 18.5rem;
-	float: left;
-	margin-left: 0.4rem;
-	margin-right: 0.4rem;
-	height: 7rem;
-	margin-top: 0.4rem;
-	margin-bottom: 0.4rem;
+    font-size: 2rem;
+    text-align: center;
+    width: 18.5rem;
+    float: left;
+    margin-left: 0.4rem;
+    margin-right: 0.4rem;
+    margin-top: 2.4rem;
+    margin-bottom: 0rem;
 }
 
 .navbar{
-    background-color: #abcdef;
+    background-color: #BC2026;
     width: auto;
     text-align: center;
-    overflow: overlay;
+    overflow: auto;
     z-index: 501;
+    box-shadow: 0.1rem 0.1rem 2rem 0rem black;
 }
 
 .menu-item {
@@ -60,9 +78,11 @@ body{
     padding: 0.2rem 1rem 0.2rem 1rem;
     cursor: pointer;
     overflow: hidden;
+    color: white;
 }
 
 .menu-toggle-next-btn{
+    cursor: pointer;
     display: none;
     color: white;
     text-align: left !important;
@@ -70,7 +90,7 @@ body{
     padding: 0rem;
     margin-left: 0rem !important;
     position: fixed;
-    background-color: black;
+    background-color: #BC2026;
     width: 3rem;
     height: 2.3rem;
     padding-top: 0.6rem;
@@ -78,11 +98,29 @@ body{
     z-index: 500;
 }
 
+.menu-toggle-next-btn img {
+    height: 1.5rem;
+    width: 1.55rem;
+    margin-top: 0.25rem;
+    margin-left: 0.2rem;
+}
+
 .menu-toggle-btn{
     display: none;
+    cursor: pointer;
     text-align: right;
     margin-top: 0.4rem;
     margin-right: 0.4rem;
+    color: white;
+}
+
+.carimbo-desconto {
+    width: auto;
+    background-color: #E4272E;
+    text-align: center;
+    color: white;
+    font-size: 2rem;
+    padding: 1rem;
 }
 
 .galeria{
@@ -91,85 +129,90 @@ body{
     margin-top: 0.4rem;
 }
 
-.slick-dots li button::before{
-    color: #ffffff !important;
+.oquedizem {
+    color: #7E5336;
+    text-align: center;
+    font-size: 2rem;
+    font-family: 'Cookie', cursive;
 }
 
-.lancamentos{
+.dizeres{
     width: 85%;
     margin: auto;
 }
 
-.lancamento{
+.dizer{
     width: 17rem;
-    background-color: white;
+    background-color: #FFD491;
     margin-right: 1rem;
+    padding: 2rem;
+    height: 13rem !important;
 }
 
-.lancamento .image-div{
-    width: 100%;
-    height: 15rem;
-    z-index: -1;
-    background-repeat: no-repeat;
-}
-
-.lancamento .image-label{
-    margin-top: -2.5rem;
-    margin-bottom: 0rem;
-    margin-right: 1rem;
-    font-size: 1.2rem;
-    background-color: red;
-    color: white;
-    width: auto;
-    display: block;
-    float: right;
-    padding: 0.2rem;
-    border: 0.2rem solid darkred;
-}
-
-.lancamento .info .info-municipio{
-    text-align: left;
-    float: right;
-    width: 100%;
-}
-
-.lancamento .info{
-    margin-left: 0.8rem;
-}
-
-.cadastro{
-    width: 30rem;
-    background-color: #dcdcdc;
+.dizer .frase {
+    font-size: 1rem;
     text-align: center;
-    margin: auto;
-    margin-top: 1rem;
+}
+
+.dizer .assinatura {
+    font-size: 0.8rem;
+    color: gray;
+    text-align: right;
+    margin-right: 0.4rem;
+}
+
+.social {
+    font-size: 2rem;
+    text-align: center;
+    font-family: 'Cookie', cursive;
+}
+
+.social p {
     margin-bottom: 1rem;
 }
 
-.cadastro form{
-    width: 90%;
-    margin: auto;
+.social a {
+    margin-right: 1rem;
 }
 
-.cadastro p{
-    font-size: 200%;
-    text-align: center;
+.social .facebook {
+    text-decoration: none;
+    color: #FFD491;
 }
 
-.cadastro form input{
-    width: 90%;
-    height: 2rem;
-    text-align: center;
-    font-size: 120%;
+.social .facebook:hover {
+    text-decoration: none;
+    color: #3B5998;
 }
 
-.cadastro form button{
-    width: 90%;
-    margin-bottom: 1rem;
-    margin-top: 0.4rem;
-    height: 2rem;
-    font-size: 110%;
-    cursor: pointer;
+.social .twitter {
+    text-decoration: none;
+    color: #FFD491;
+}
+
+.social .twitter:hover {
+    text-decoration: none;
+    color: #1DA1F2;
+}
+
+.social .instagram {
+    text-decoration: none;
+    color: #FFD491;
+}
+
+.social .instagram:hover {
+    text-decoration: none;
+    color: #DF3968;
+}
+
+.social .whatsapp {
+    text-decoration: none;
+    color: #FFD491;
+}
+
+.social .whatsapp:hover {
+    text-decoration: none;
+    color: #2CC64E;
 }
 
 .rodape-endereco{
@@ -221,6 +264,20 @@ body{
     }
 }
 
+@media screen and (min-width: 425px) {
+    .oquedizem {
+        font-size: 2.55rem;
+    }
+
+    .dizer .frase {
+        font-size: 1.5rem;
+    }
+
+    .dizer .assinatura {
+        font-size: 1rem;
+    }
+}
+
 @media screen and (max-width: 1350px) {
     .navbar{
         width: 14.5rem;
@@ -231,21 +288,6 @@ body{
 	
 	.mobile-header{
 		display: block;
-		color: white;
-	    text-align: center;
-	    margin-top: -0.5rem;
-	    padding: 0rem;
-	    margin-left: 0rem !important;
-	    position: fixed;
-	    background-color: black;
-	    width: 100%;
-	    height: 2.3rem;
-	    padding-top: 0.6rem;
-	    z-index: 499;
-	}
-	
-	.mobile-header p{
-		margin: auto;
 	}
 
     .cabecalho{
@@ -262,6 +304,11 @@ body{
         display: block;
     }
 
+    .carimbo-desconto {
+        font-size: 1.5rem;
+        padding: 0.7rem;
+    }
+
     .cadastro{
         width: auto;
         margin-left: 0.4rem;
@@ -272,5 +319,16 @@ body{
 @media screen and (max-width: 440px) {
     .apresentacao{
         width: 97% !important;
+    }
+}
+
+@media screen and (max-width: 592px) {
+    .logomarca {
+        margin-right: 0.8rem;
+        width: 100%;
+    }
+
+    .apresentacao {
+        width: 100%;
     }
 }
